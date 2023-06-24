@@ -1,0 +1,21 @@
+import java.util.*;
+
+
+public class Solution
+{
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int score = sc.nextInt();
+
+		  if((score>=75 )&&(score<100))
+          {System.out.println("Distinction");}
+
+          else if((score>=50 )&& (score<75))
+          {System.out.println("Average");}
+
+          else if((score>=35) && (score<50))
+          {System.out.println("Below Average");}
+		 
+	}
+}
