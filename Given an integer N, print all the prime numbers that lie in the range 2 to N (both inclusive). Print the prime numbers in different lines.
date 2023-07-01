@@ -1,0 +1,32 @@
+Given an integer N, print all the prime numbers that lie in the range 2 to N (both inclusive).
+Print the prime numbers in different lines.
+============================================================================
+
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+
+       
+        int i, number, count; 
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(number = 1; number <= n; number++)
+        {
+            count = 0;
+            for (i = 2; i <= number/2; i++)
+            {
+                if(number % i == 0)
+                {
+                    count++;
+                    break;
+                }
+            }
+            if(count == 0 && number != 1 )
+            {
+                System.out.print(number+"\n");
+            }
+        }
+
+    }
+}
